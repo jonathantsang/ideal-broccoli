@@ -23,3 +23,17 @@ namespace ConsoleApplication1
         }
     }
 }
+
+using System;
+using Twilio;
+
+namespace twilio_sms
+{
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                var client = new TwilioRestClient(Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID"), Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN"));
+            }
+        }
+}
